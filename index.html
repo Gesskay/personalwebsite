@@ -3,114 +3,137 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gursehaj Singh Khurana · Design, Analytics, Product</title>
-<meta name="description" content="Gursehaj Singh Khurana: Product Manager building institutional trading technology. Design, analytics and product management.">
+<title>Gursehaj Singh Khurana · Design, Analytics, PM</title>
+<meta name="description" content="Gursehaj Singh Khurana: Product Manager building institutional trading technology. Jack of all trades, master of getting things done.">
+<meta name="theme-color" content="#1C3163">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#F6F3EC; --ink:#14213D; --muted:#4B5567; --brass:#7A5C2E;
-    --rule:#D9D2C3; --card:#FBF9F4;
-    --serif:"Newsreader", Georgia, "Times New Roman", serif;
+    --navy:#1C3163; --ink:#00071B; --white:#FEFFFF; --gold:#D6B585;
+    --gold-text:#8A6A2F; --muted:#4A5470; --on-navy-muted:#B9C2D8;
+    --rule:#E3E6EE; --card:#F6F7FA;
+    --serif:"Instrument Serif", Georgia, "Times New Roman", serif;
     --sans:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
-  a{color:var(--ink);text-decoration-color:var(--brass);text-underline-offset:3px}
-  a:hover{color:var(--brass)}
-  a:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
-  .wrap{max-width:880px;margin:0 auto;padding:0 28px}
+  body{margin:0;background:var(--white);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:var(--navy);text-decoration-color:var(--gold);text-underline-offset:3px}
+  a:hover{color:var(--gold-text)}
+  a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+  .wrap{max-width:900px;margin:0 auto;padding:0 28px}
 
-  header.top{border-bottom:1px solid var(--rule)}
-  header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px;flex-wrap:wrap}
-  .mark{font-family:var(--serif);font-size:24px;font-weight:600;letter-spacing:.02em;text-decoration:none}
-  .mark span{color:var(--brass)}
-  nav ul{list-style:none;margin:0;padding:0;display:flex;gap:22px;flex-wrap:wrap}
-  nav a{font-size:14px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--muted);display:inline-block;padding:12px 0}
-  nav a:hover{color:var(--ink)}
+  /* Navy hero */
+  .hero-band{background:var(--navy);color:var(--white)}
+  .hero-band a{color:var(--white)}
+  header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;flex-wrap:wrap}
+  .mark{font-family:var(--serif);font-size:28px;letter-spacing:.02em;text-decoration:none;color:var(--white)}
+  .mark span{color:var(--gold)}
+  nav ul{list-style:none;margin:0;padding:0;display:flex;gap:24px;flex-wrap:wrap}
+  nav a{font-size:13px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--on-navy-muted)!important;display:inline-block;padding:12px 0}
+  nav a:hover{color:var(--gold)!important}
 
-  .hero{padding:96px 0 72px}
-  .eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);font-weight:600;margin:0 0 20px}
-  h1{font-family:var(--serif);font-weight:500;font-size:clamp(44px,8vw,76px);line-height:1.02;letter-spacing:-.015em;margin:0 0 24px;text-wrap:balance}
-  .lede{font-family:var(--serif);font-size:clamp(20px,2.6vw,24px);line-height:1.45;color:var(--muted);max-width:640px;margin:0 0 36px;text-wrap:pretty}
+  .hero{padding:88px 0 96px}
+  .ipa{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--gold);margin:0 0 10px;letter-spacing:.01em}
+  h1{font-family:var(--serif);font-weight:400;font-size:clamp(52px,9vw,96px);line-height:.98;letter-spacing:-.01em;margin:0 0 36px;text-wrap:balance}
+  .jack{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--on-navy-muted);margin:0 0 6px}
+  .master{font-family:var(--serif);font-size:clamp(30px,4.6vw,44px);line-height:1.15;margin:0 0 26px}
+  .nw{white-space:nowrap}
+  .badge{width:.85em;height:.85em;vertical-align:-.08em;margin-left:.25em}
+  .tags{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:0 0 40px;padding:0;list-style:none}
+  .tags li{font-size:15px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--gold)}
+  .tags li.dot{color:var(--on-navy-muted);font-weight:400}
+  .lede{font-size:18px;line-height:1.6;color:var(--on-navy-muted);max-width:620px;margin:0 0 36px;text-wrap:pretty}
   .cta{display:flex;gap:14px;flex-wrap:wrap}
-  .btn{display:inline-flex;align-items:center;min-height:46px;padding:0 22px;border:1px solid var(--ink);font-size:15px;font-weight:500;text-decoration:none;letter-spacing:.02em}
-  .btn.solid{background:var(--ink);color:var(--paper)}
-  .btn.solid:hover{background:#22355E;color:var(--paper)}
-  .btn:hover{color:var(--brass);border-color:var(--brass)}
-  .btn.solid:hover{border-color:#22355E}
+  .btn{display:inline-flex;align-items:center;min-height:48px;padding:0 24px;border:1px solid var(--gold);font-size:15px;font-weight:500;text-decoration:none;letter-spacing:.03em;color:var(--white)}
+  .btn.solid{background:var(--gold);color:var(--ink)!important}
+  .btn.solid:hover{background:#E2C79E}
+  .btn:hover{background:rgba(214,181,133,.12)}
 
-  section{padding:64px 0;border-top:1px solid var(--rule)}
+  /* Sections */
+  section{padding:72px 0;border-top:1px solid var(--rule)}
+  section:first-of-type{border-top:0}
   .sec{display:grid;grid-template-columns:200px minmax(0,1fr);gap:32px}
-  h2{font-family:var(--serif);font-weight:500;font-size:28px;line-height:1.2;margin:0}
-  h2 small{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);font-weight:600;margin-bottom:8px}
-  h3{font-family:var(--serif);font-weight:600;font-size:21px;line-height:1.3;margin:0}
+  h2{font-family:var(--serif);font-weight:400;font-size:34px;line-height:1.1;margin:0;color:var(--navy)}
+  h2 small{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-text);font-weight:600;margin-bottom:10px}
+  h3{font-family:var(--serif);font-weight:400;font-size:25px;line-height:1.2;margin:0;color:var(--navy)}
   p{margin:0 0 16px;text-wrap:pretty}
   .muted{color:var(--muted)}
 
-  .pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:8px}
-  .pillar{background:var(--card);border:1px solid var(--rule);padding:22px}
-  .pillar h3{font-size:20px;margin-bottom:8px}
+  .pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:10px}
+  .pillar{background:var(--card);border-top:2px solid var(--gold);padding:22px}
+  .pillar h3{margin-bottom:8px}
   .pillar p{font-size:15px;color:var(--muted);margin:0}
 
   .role{padding:0 0 28px;margin:0 0 28px;border-bottom:1px solid var(--rule)}
   .role:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
   .role-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline;margin-bottom:6px}
   .when{font-size:14px;color:var(--muted);white-space:nowrap}
-  .org{font-size:15px;color:var(--brass);font-weight:600;margin:0 0 10px}
+  .org{font-size:14px;color:var(--gold-text);font-weight:600;letter-spacing:.04em;margin:0 0 10px}
   ul.points{margin:0;padding-left:18px}
   ul.points li{margin:0 0 8px}
-  .earlier{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+  ul.points li::marker{color:var(--gold-text)}
+  .earlier{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
   .earlier p{font-size:15px;margin:4px 0 0;color:var(--muted)}
 
-  .project{background:var(--card);border:1px solid var(--rule);padding:26px;margin-bottom:18px}
-  .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-  .tag{font-size:13px;border:1px solid var(--rule);padding:3px 10px;color:var(--muted)}
+  .project{background:var(--card);border-top:2px solid var(--gold);padding:26px;margin-bottom:18px}
+  .tagrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+  .tag{font-size:13px;border:1px solid var(--rule);background:var(--white);padding:3px 10px;color:var(--muted)}
   .more{font-size:15px;color:var(--muted)}
 
-  dl.creds{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:12px 24px;margin:0}
-  dl.creds dt{font-size:14px;color:var(--muted);letter-spacing:.02em}
-  dl.creds dd{margin:0;font-family:var(--serif);font-size:19px;line-height:1.4}
+  dl.creds{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:14px 24px;margin:0}
+  dl.creds dt{font-size:14px;color:var(--muted);letter-spacing:.02em;padding-top:4px}
+  dl.creds dd{margin:0;font-family:var(--serif);font-size:23px;line-height:1.3;color:var(--navy)}
 
-  .contact h2.big{font-size:clamp(32px,5vw,44px);margin-bottom:16px}
-  .links{display:flex;gap:28px;flex-wrap:wrap;margin-top:12px}
-  .links a{font-size:16px;display:inline-block;padding:10px 0}
+  /* Ink contact band */
+  .contact{background:var(--ink);color:var(--white);border-top:0}
+  .contact h2.big{font-size:clamp(38px,6vw,58px);margin-bottom:14px;color:var(--white)}
+  .contact h2.big em{color:var(--gold)}
+  .contact .muted{color:var(--on-navy-muted)}
+  .links{display:flex;gap:30px;flex-wrap:wrap;margin-top:14px}
+  .links a{font-size:16px;display:inline-block;padding:10px 0;color:var(--white)}
+  .links a:hover{color:var(--gold)}
 
-  footer{border-top:1px solid var(--rule);padding:28px 0 40px;font-size:14px;color:var(--muted)}
+  footer{background:var(--ink);color:var(--on-navy-muted);border-top:1px solid #1A2238;padding:26px 0 40px;font-size:14px}
 
   @media (max-width:720px){
-    .hero{padding:64px 0 52px}
+    .hero{padding:56px 0 72px}
     .sec{grid-template-columns:minmax(0,1fr);gap:20px}
     .pillars,.earlier{grid-template-columns:minmax(0,1fr)}
     dl.creds{grid-template-columns:minmax(0,1fr);gap:2px}
-    dl.creds dd{margin-bottom:14px}
+    dl.creds dd{margin-bottom:16px}
     nav ul{gap:16px}
   }
 </style>
 </head>
 <body>
 
-<header class="top">
-  <div class="wrap">
-    <a class="mark" href="#top" aria-label="Gursehaj Singh Khurana, home">G<span>·</span>K</a>
-    <nav aria-label="Main">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<div class="hero-band">
+  <header class="top">
+    <div class="wrap">
+      <a class="mark" href="#top" aria-label="Gursehaj Singh Khurana, home">G<span>·</span>K</a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<main id="top">
-  <div class="wrap">
+  <div class="wrap" id="top">
     <div class="hero">
-      <p class="eyebrow">Design · Analytics · Product Management</p>
+      <p class="ipa" aria-label="Pronounced gur-say-haj">/ˈɡʊr.seː.ɦədʒ/</p>
       <h1>Gursehaj Singh Khurana</h1>
+      <p class="jack">Jack of all trades</p>
+      <p class="master">Master of getting things <span class="nw">done.<svg class="badge" viewBox="0 0 24 24" role="img" aria-label="Verified"><path fill="#D6B585" d="M12 1.5l2.4 1.9 3-.4 1.1 2.8 2.8 1.1-.4 3 1.9 2.4-1.9 2.4.4 3-2.8 1.1-1.1 2.8-3-.4L12 22.5l-2.4-1.9-3 .4-1.1-2.8-2.8-1.1.4-3L1.5 12l1.9-2.4-.4-3 2.8-1.1L6.9 2.7l3 .4z"/><path d="M7.6 12.3l2.9 2.9 5.9-6" fill="none" stroke="#00071B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></p>
+      <ul class="tags" aria-label="Focus areas">
+        <li>Design</li><li class="dot" aria-hidden="true">•</li><li>Analytics</li><li class="dot" aria-hidden="true">•</li><li>PM</li>
+      </ul>
       <p class="lede">Product Manager building institutional trading technology at ION Group (Fidessa), helping brokerages enter the Indian market. Incoming at ISB, Class of ’28.</p>
       <div class="cta">
         <a class="btn solid" href="mailto:gesskay02@gmail.com">Get in touch</a>
@@ -118,7 +141,9 @@
       </div>
     </div>
   </div>
+</div>
 
+<main>
   <section id="about">
     <div class="wrap sec">
       <h2><small>About</small>Where design meets markets</h2>
@@ -128,7 +153,7 @@
         <div class="pillars">
           <div class="pillar"><h3>Design</h3><p>Service design and UX for institutional traders; redesigned Fidessa’s desktop algo-trading modules.</p></div>
           <div class="pillar"><h3>Analytics</h3><p>Python, SQL, Power BI; built a market analyser on the Kite API with a custom pattern scanner.</p></div>
-          <div class="pillar"><h3>Product</h3><p>Roadmaps, PRDs, client demos and regulatory sign-off for a new-market launch.</p></div>
+          <div class="pillar"><h3>PM</h3><p>Roadmaps, PRDs, client demos and regulatory sign-off for a new-market launch.</p></div>
         </div>
       </div>
     </div>
@@ -175,12 +200,12 @@
         <div class="project">
           <h3>Stock Market Analyser</h3>
           <p class="muted" style="margin:8px 0 0">A Python market analyser on the Kite API that computes technical indicators (moving averages, MACD, RSI, Bollinger Bands) and runs a custom pattern scanner for trend detection.</p>
-          <div class="tags"><span class="tag">Python</span><span class="tag">Kite API</span><span class="tag">Technical analysis</span></div>
+          <div class="tagrow"><span class="tag">Python</span><span class="tag">Kite API</span><span class="tag">Technical analysis</span></div>
         </div>
         <div class="project">
           <h3>Question_CSV</h3>
           <p class="muted" style="margin:8px 0 0">Natural-language exploration of CSV data, built with Streamlit and the OpenAI API.</p>
-          <div class="tags"><span class="tag">Streamlit</span><span class="tag">OpenAI API</span><span class="tag">NLP</span></div>
+          <div class="tagrow"><span class="tag">Streamlit</span><span class="tag">OpenAI API</span><span class="tag">NLP</span></div>
         </div>
         <p class="more">Also: Customer Acquisition Predictor (regression model) · ASL Recognition (computer-vision gesture classifier).</p>
       </div>
@@ -201,7 +226,7 @@
 
   <section id="contact" class="contact">
     <div class="wrap">
-      <h2 class="big">Let’s talk fintech products.</h2>
+      <h2 class="big">Let’s talk <em>fintech products.</em></h2>
       <p class="muted">Happy to connect about trading technology, product roles, or anything at the edge of design and markets.</p>
       <div class="links">
         <a href="mailto:gesskay02@gmail.com">gesskay02@gmail.com</a>
